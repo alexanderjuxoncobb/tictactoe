@@ -1,0 +1,184 @@
+/*
+* {
+  border: 1px solid;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, 200px) / repeat(3, 200px);
+  justify-content: center;
+}
+
+.container > * {
+  text-align: center;
+  align-content: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#message {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+input {
+  background-color: rgb(190, 223, 250, 0.2);
+  border-radius: 5px;
+  margin: 0px 20px 0px 5px;
+}
+
+.animated-button {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.animated-button:hover {
+  transform: scale(1.1); /* Slightly enlarges the button */
+  background-color: #2980b9; /* Changes color on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+.animated-button:active {
+  transform: scale(0.95); /* Slightly shrinks on click */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Reduces shadow on click */
+}
+
+#reset {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, 150px) / repeat(3, 150px);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2c3e50;
+  background-color: #e7eff6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.container > div:hover {
+  background-color: #d5e1eb;
+  transform: scale(1.05);
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #34495e;
+  margin-right: 5px;
+}
+
+input {
+  background-color: rgba(190, 223, 250, 0.2);
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  color: #2c3e50;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#message {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.animated-button,
+#reset {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-button:hover,
+#reset:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button:active,
+#reset:active {
+  transform: scale(0.95);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
